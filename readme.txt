@@ -26,6 +26,8 @@ git checkout name 切换分支
 git checkout -b name 创建并切换分支
 git merge name 合并某分支到当前分支
 git branch -d name 删除分支
+http://www.07net01.com/2015/09/922578.html
+http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe
 
 
 
