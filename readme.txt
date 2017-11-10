@@ -26,6 +26,18 @@ git checkout name 切换分支
 git checkout -b name 创建并切换分支
 git merge name 合并某分支到当前分支
 git branch -d name 删除分支
+git log --graph命令可以看到分支合并图。
+git log --graph --pretty=oneline --abbrev-commit
+git merge --no-ff -m "merge with no-ff" dev
+git stash 可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作：
+git stash list  刚才的工作现场存到哪去了
+一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
+另一种方式是用git stash pop，恢复的同时把stash内容也删了：
+你可以多次stash，恢复的时候，先用git stash list查看，然后恢复指定的stash，用命令：
+$ git stash apply stash@{0}
+
+
+
 http://www.07net01.com/2015/09/922578.html
 http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe
 
