@@ -36,6 +36,7 @@ git stash list  刚才的工作现场存到哪去了
 你可以多次stash，恢复的时候，先用git stash list查看，然后恢复指定的stash，用命令：
 $ git stash apply stash@{0}
 
+Git友情提醒，feature-vulcan分支还没有被合并，如果删除，将丢失掉修改，如果要强行删除，需要使用命令git branch -D feature-vulcan。
 
 
 http://www.07net01.com/2015/09/922578.html
